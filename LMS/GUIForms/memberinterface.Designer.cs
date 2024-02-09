@@ -85,7 +85,6 @@
             label3.Size = new Size(63, 25);
             label3.TabIndex = 2;
             label3.Text = "label3";
-            label3.Click += label3_Click;
             // 
             // label1
             // 
@@ -128,6 +127,7 @@
             button1.TabIndex = 2;
             button1.Text = "Borrow book";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // panel2
             // 
@@ -159,6 +159,7 @@
             button2.TabIndex = 1;
             button2.Text = "Search book";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // pictureBox3
             // 
@@ -170,6 +171,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // panel4
             // 
@@ -191,6 +193,7 @@
             button3.TabIndex = 1;
             button3.Text = "Return book";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // pictureBox4
             // 

@@ -1,11 +1,14 @@
-﻿namespace Final
+﻿using MongoDB.Driver;
+using MongoDB.Bson;
+
+namespace Final
 {
     public class User
     {
-        private string username;
-        private string userId;
-        private string email;
-        private string password;
+        public string username;
+        public string userId;
+        public string email;
+        public string password;
 
         public User(string username, string userId, string email, string password)
         {
@@ -39,6 +42,15 @@
             set { password = value; }
         }
 
+        public List<User> Register()
+        {
+            var client = new MongoClient();
+            var database = client.GetDatabase("LMSdb");
+            var collection = database.GetCollection<User>("users");
+
+            var users = collection.Find(_ =>true).ToList();
+            return users;
+        }
 
     }
 

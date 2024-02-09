@@ -16,5 +16,10 @@ namespace LMS.GUIForms
         {
             InitializeComponent();
         }
+
+        private void button1return_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

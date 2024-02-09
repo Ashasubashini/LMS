@@ -23,11 +23,11 @@ namespace LMS.GUIForms
             Application.Exit();
         }
 
-        private void button1memberlogin_Click(object sender, EventArgs e)
-        {
-            new memberLogin().Show();
-            this.Hide();
-        }
+        //private void button1memberlogin_Click(object sender, EventArgs e)
+        //{
+        //    new memberLogin().Show();
+        //    this.Hide();
+        //}
 
         private void button2librarianlogin_Click(object sender, EventArgs e)
         {
@@ -38,6 +38,12 @@ namespace LMS.GUIForms
         private void button3signup_Click(object sender, EventArgs e)
         {
             new SignUp().Show();
+            this.Hide();
+        }
+
+        private void button1memberlogin_Click(object sender, EventArgs e)
+        {
+            new memberLogin().Show();
             this.Hide();
         }
     }

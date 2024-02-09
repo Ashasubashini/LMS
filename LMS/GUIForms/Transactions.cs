@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LMS.GUIForms
 {
-    public partial class Memberdetails : Form
+    public partial class Transactions : Form
     {
-        public Memberdetails()
+        public Transactions()
         {
             InitializeComponent();
-        }
-
-        private void button1remove_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

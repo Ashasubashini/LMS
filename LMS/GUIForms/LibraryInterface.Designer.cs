@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LibraryInterface));
             panel1 = new Panel();
+            label4 = new Label();
+            label3 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             label2 = new Label();
@@ -37,8 +39,9 @@
             button1 = new Button();
             pictureBox2 = new PictureBox();
             panel3 = new Panel();
-            pictureBox5 = new PictureBox();
             button3 = new Button();
+            pictureBox7 = new PictureBox();
+            pictureBox5 = new PictureBox();
             panel4 = new Panel();
             pictureBox3 = new PictureBox();
             button4 = new Button();
@@ -50,14 +53,15 @@
             button5 = new Button();
             panel7 = new Panel();
             button6 = new Button();
-            pictureBox7 = new PictureBox();
-            label3 = new Label();
-            label4 = new Label();
+            button7transaction = new Button();
+            pictureBox8 = new PictureBox();
+            panel8 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -66,7 +70,8 @@
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            panel8.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -80,6 +85,26 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(267, 451);
             panel1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(70, 274);
+            label4.Name = "label4";
+            label4.Size = new Size(63, 25);
+            label4.TabIndex = 3;
+            label4.Text = "label4";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(70, 223);
+            label3.Name = "label3";
+            label3.Size = new Size(63, 25);
+            label3.TabIndex = 2;
+            label3.Text = "label3";
             // 
             // label1
             // 
@@ -106,7 +131,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(926, 1);
+            label2.Location = new Point(1107, 1);
             label2.Name = "label2";
             label2.Size = new Size(29, 31);
             label2.TabIndex = 1;
@@ -133,6 +158,7 @@
             button1.TabIndex = 4;
             button1.Text = "Search book";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // pictureBox2
             // 
@@ -155,17 +181,6 @@
             panel3.Size = new Size(159, 159);
             panel3.TabIndex = 3;
             // 
-            // pictureBox5
-            // 
-            pictureBox5.BackColor = Color.Lavender;
-            pictureBox5.Image = LMS.Properties.Resources.group_chat;
-            pictureBox5.Location = new Point(0, 0);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(159, 120);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 0;
-            pictureBox5.TabStop = false;
-            // 
             // button3
             // 
             button3.BackColor = Color.SteelBlue;
@@ -176,6 +191,29 @@
             button3.TabIndex = 9;
             button3.Text = "Add member";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Lavender;
+            pictureBox7.Image = LMS.Properties.Resources.contact;
+            pictureBox7.Location = new Point(3, 0);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(156, 120);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 0;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.Lavender;
+            pictureBox5.Image = LMS.Properties.Resources.group_chat;
+            pictureBox5.Location = new Point(0, 0);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(159, 120);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 0;
+            pictureBox5.TabStop = false;
             // 
             // panel4
             // 
@@ -208,6 +246,7 @@
             button4.TabIndex = 10;
             button4.Text = "Issue book";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // panel5
             // 
@@ -240,6 +279,7 @@
             button2.TabIndex = 8;
             button2.Text = "Add book";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // panel6
             // 
@@ -272,6 +312,7 @@
             button5.TabIndex = 11;
             button5.Text = "Library inventory";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // panel7
             // 
@@ -293,37 +334,37 @@
             button6.TabIndex = 12;
             button6.Text = "Member details";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
-            // pictureBox7
+            // button7transaction
             // 
-            pictureBox7.BackColor = Color.Lavender;
-            pictureBox7.Image = LMS.Properties.Resources.contact;
-            pictureBox7.Location = new Point(3, 0);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(156, 120);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 0;
-            pictureBox7.TabStop = false;
+            button7transaction.BackColor = Color.SteelBlue;
+            button7transaction.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button7transaction.Location = new Point(0, 120);
+            button7transaction.Name = "button7transaction";
+            button7transaction.Size = new Size(152, 39);
+            button7transaction.TabIndex = 8;
+            button7transaction.Text = "Transaction";
+            button7transaction.UseVisualStyleBackColor = false;
             // 
-            // label3
+            // pictureBox8
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(70, 223);
-            label3.Name = "label3";
-            label3.Size = new Size(63, 25);
-            label3.TabIndex = 2;
-            label3.Text = "label3";
+            pictureBox8.Image = LMS.Properties.Resources.file;
+            pictureBox8.Location = new Point(0, 0);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(153, 120);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 9;
+            pictureBox8.TabStop = false;
             // 
-            // label4
+            // panel8
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(70, 274);
-            label4.Name = "label4";
-            label4.Size = new Size(63, 25);
-            label4.TabIndex = 3;
-            label4.Text = "label4";
+            panel8.Controls.Add(pictureBox8);
+            panel8.Controls.Add(button7transaction);
+            panel8.Location = new Point(969, 143);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(155, 159);
+            panel8.TabIndex = 10;
             // 
             // LibraryInterface
             // 
@@ -331,7 +372,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
             BackgroundImage = LMS.Properties.Resources._38828;
-            ClientSize = new Size(967, 456);
+            ClientSize = new Size(1148, 456);
+            Controls.Add(panel8);
             Controls.Add(panel7);
             Controls.Add(panel6);
             Controls.Add(panel5);
@@ -349,6 +391,7 @@
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -357,7 +400,8 @@
             panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            panel8.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -388,5 +432,8 @@
         private Button button6;
         private Label label4;
         private Label label3;
+        private Button button7transaction;
+        private PictureBox pictureBox8;
+        private Panel panel8;
     }
 }

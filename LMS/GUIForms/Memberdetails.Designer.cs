@@ -165,6 +165,7 @@
             button1remove.TabIndex = 7;
             button1remove.Text = "Remove";
             button1remove.UseVisualStyleBackColor = false;
+            button1remove.Click += button1remove_Click;
             // 
             // Memberdetails
             // 

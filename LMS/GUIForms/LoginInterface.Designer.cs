@@ -79,9 +79,11 @@
             // label1close
             // 
             label1close.AutoSize = true;
-            label1close.Location = new Point(770, 9);
+            label1close.BackColor = Color.Transparent;
+            label1close.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1close.Location = new Point(759, 9);
             label1close.Name = "label1close";
-            label1close.Size = new Size(18, 20);
+            label1close.Size = new Size(29, 31);
             label1close.TabIndex = 3;
             label1close.Text = "X";
             label1close.Click += label1close_Click;

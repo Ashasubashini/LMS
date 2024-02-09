@@ -122,6 +122,7 @@
             button1return.TabIndex = 8;
             button1return.Text = "Reteun Book";
             button1return.UseVisualStyleBackColor = false;
+            button1return.Click += button1return_Click;
             // 
             // Returnbook
             // 

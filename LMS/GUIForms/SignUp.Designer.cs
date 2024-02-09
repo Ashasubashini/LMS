@@ -133,7 +133,6 @@
             label5.Size = new Size(163, 25);
             label5.TabIndex = 8;
             label5.Text = "confirm Password";
-            label5.Click += label5_Click;
             // 
             // textBox3password
             // 
@@ -161,7 +160,6 @@
             checkBox1showpwd.TabIndex = 12;
             checkBox1showpwd.Text = "Show password";
             checkBox1showpwd.UseVisualStyleBackColor = true;
-            checkBox1showpwd.CheckedChanged += checkBox1showpwd_CheckedChanged;
             // 
             // label3
             // 

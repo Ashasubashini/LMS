@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             panel1 = new Panel();
+            button1borrow = new Button();
             textBox4availability = new TextBox();
             textBox3Author = new TextBox();
             textBox2ISBN = new TextBox();
@@ -39,7 +40,6 @@
             label4 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
-            button1borrow = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -73,6 +73,19 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(445, 506);
             panel1.TabIndex = 1;
+            // 
+            // button1borrow
+            // 
+            button1borrow.BackColor = SystemColors.ActiveCaptionText;
+            button1borrow.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1borrow.ForeColor = SystemColors.Control;
+            button1borrow.Location = new Point(128, 365);
+            button1borrow.Name = "button1borrow";
+            button1borrow.Size = new Size(152, 43);
+            button1borrow.TabIndex = 10;
+            button1borrow.Text = "Search Book";
+            button1borrow.UseVisualStyleBackColor = false;
+            button1borrow.Click += button1borrow_Click;
             // 
             // textBox4availability
             // 
@@ -151,18 +164,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // button1borrow
-            // 
-            button1borrow.BackColor = SystemColors.ActiveCaptionText;
-            button1borrow.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1borrow.ForeColor = SystemColors.Control;
-            button1borrow.Location = new Point(128, 365);
-            button1borrow.Name = "button1borrow";
-            button1borrow.Size = new Size(152, 43);
-            button1borrow.TabIndex = 10;
-            button1borrow.Text = "Borrow Book";
-            button1borrow.UseVisualStyleBackColor = false;
             // 
             // searchbook
             // 
