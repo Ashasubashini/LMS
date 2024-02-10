@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LMS.GUIForms
+namespace Final
 {
 
     // Refactored memberLogin class
     public partial class memberLogin : Form
     {
-        //public memberLogin()
-        //{
-        //    InitializeComponent();
-        //}
+        public memberLogin()
+        {
+            InitializeComponent();
+        }
 
         private void label3_Click(object sender, EventArgs e)
         {
