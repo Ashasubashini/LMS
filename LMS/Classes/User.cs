@@ -10,6 +10,7 @@ namespace Final
         public string email;
         public string password;
 
+
         public User(string userId, string username, string email, string password)
         {
             this.username = username;
@@ -42,14 +43,17 @@ namespace Final
             set { password = value; }
         }
 
-        public List<User> Register()
+        public async Task<List<BsonDocument>> Register()
         {
             var client = new MongoClient();
             var database = client.GetDatabase("LMSdb");
-            var collection = database.GetCollection<User>("users");
+            IMongoCollection<BsonDocument> _collection = database.GetCollection<BsonDocument>("users");
 
-            var users = collection.Find(_ => true).ToList();
-            return users;
+            MessageBox.Show("MongoDB connection initiated");
+
+            var documents = await _collection.Find(new BsonDocument()).ToListAsync();
+            MessageBox.Show("Got the docs");
+            return documents;
         }
 
     }

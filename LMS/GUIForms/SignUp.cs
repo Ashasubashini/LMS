@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,17 +23,22 @@ namespace Final
             Application.Exit();
         }
 
-        private void button1signup_Click(object sender, EventArgs e)
+        private async void button1signup_ClickAsync(object sender, EventArgs e)
         {
-            //User u = new User("asha", "DS213", "fdf@ew", "rewr23");
+            MessageBox.Show("Executing SignUp");
 
-            //List<User> users = u.Register();
-            //string message = "Users:\n";
-            //foreach (var user in users)
-            //{
-            //    message += $"Username: {user.username}, Email: {user.email}, Password: {user.password}\n";
-            //}
-            //MessageBox.Show(message);
+            User u = new User("DS213", "asha", "fdf@ew", "rewr23");
+
+            List<BsonDocument> documents = await u.Register();
+
+            StringBuilder message = new StringBuilder();
+            foreach (var doc in documents)
+            {
+                message.AppendLine(doc.ToJson()); // Convert each document to JSON and append it to the StringBuilder
+            }
+
+            // Display the concatenated string in a MessageBox
+            MessageBox.Show(message.ToString(), "User Documents", MessageBoxButtons.OK);
         }
 
         private void checkBox1showpwd_CheckedChanged(object sender, EventArgs e)

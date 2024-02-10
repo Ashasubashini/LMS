@@ -69,7 +69,7 @@
             button1signup.TabIndex = 1;
             button1signup.Text = "Sing Up";
             button1signup.UseVisualStyleBackColor = false;
-            button1signup.Click += button1signup_Click;
+            button1signup.Click += button1signup_ClickAsync;
             // 
             // label1
             // 
