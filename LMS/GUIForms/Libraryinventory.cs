@@ -21,5 +21,10 @@ namespace LMS.GUIForms
         {
 
         }
+
+        private void Libraryinventory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

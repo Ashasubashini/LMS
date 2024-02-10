@@ -16,5 +16,10 @@ namespace LMS.GUIForms
         {
             InitializeComponent();
         }
+
+        private void Returnbook_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

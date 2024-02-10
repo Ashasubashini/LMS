@@ -6,40 +6,33 @@ using System.Threading.Tasks;
 
 namespace LMS.Classes
 {
-    internal class Member
+    public class Member
     {
         private string name;
         private string email;
         private string password;
-        public bool checkavailability;
 
 
-        public Member(string title, string author, string isbn, bool checkavailability)
+        public Member(string name, string email, string password)
         {
-            this.Title = title;
-            this.Author = author;
-            this.ISBN = isbn;
-            this.CheckavAilability = checkavailability;
+            this.name = name;
+            this.email = email;
+            this.password = password;
         }
-        private string Title
+
+        public string getName()
         {
-            get { return title; }
-            set { title = value; }
+            return this.name;
         }
-        private string Author
+
+        public string getEmail()
         {
-            get { return author; }
-            set { author = value; }
+            return this.email;
         }
-        private string ISBN
+
+        public string getPassword()
         {
-            get { return isbn; }
-            set { isbn = value; }
-        }
-        public bool CheckavAilability
-        {
-            get { return checkavailability; }
-            set { checkavailability = value; }
+            return this.password;
         }
     }
 }

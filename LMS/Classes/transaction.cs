@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LMS.Classes
 {
-    internal class transaction
+    internal class Transaction
     {
     }
 }

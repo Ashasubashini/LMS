@@ -1,4 +1,5 @@
-﻿namespace Final
+﻿
+namespace Final
 {
     partial class memberLogin
     {
@@ -11,14 +12,15 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        /// 
+        //protected override void Dispose(bool disposing)
+        //{
+        //    if (disposing && (components != null))
+        //    {
+        //        components.Dispose();
+        //    }
+        //    base.Dispose(disposing);
+        //}
 
         #region Windows Form Designer generated code
 
@@ -62,7 +64,7 @@
             loginmember.TabIndex = 1;
             loginmember.Text = "Log In";
             loginmember.UseVisualStyleBackColor = false;
-            loginmember.Click += button1_Click;
+            //loginmember.Click += button1_Click;
             // 
             // username
             // 
@@ -114,7 +116,7 @@
             label1.Size = new Size(35, 38);
             label1.TabIndex = 10;
             label1.Text = "X";
-            label1.Click += label3_Click;
+            //label1.Click += label3_Click;
             // 
             // label2
             // 
@@ -135,26 +137,32 @@
             // 
             // memberLogin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.SteelBlue;
-            ClientSize = new Size(386, 450);
-            Controls.Add(textBox1memberID);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(textBox3password);
-            Controls.Add(label1password);
-            Controls.Add(label3close);
-            Controls.Add(textBox2username);
-            Controls.Add(username);
-            Controls.Add(loginmember);
-            Controls.Add(pictureBox1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "memberLogin";
-            Text = "memberLogin";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+
+            //AutoScaleDimensions = new SizeF(8F, 20F);
+            //AutoScaleMode = AutoScaleMode.Font;
+            //BackColor = Color.SteelBlue;
+            //ClientSize = new Size(386, 450);
+            //Controls.Add(textBox1memberID);
+            //Controls.Add(label2);
+            //Controls.Add(label1);
+            //Controls.Add(textBox3password);
+            //Controls.Add(label1password);
+            //Controls.Add(label3close);
+            //Controls.Add(textBox2username);
+            //Controls.Add(username);
+            //Controls.Add(loginmember);
+            //Controls.Add(pictureBox1);
+            //FormBorderStyle = FormBorderStyle.None;
+            //Name = "memberLogin";
+            //Text = "memberLogin";
+            //((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            //ResumeLayout(false);
+            //PerformLayout();
+        }
+
+        private void SuspendLayout()
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

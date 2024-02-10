@@ -35,6 +35,11 @@ namespace Final
         {
 
         }
+
+        private void Addbook_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

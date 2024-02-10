@@ -16,5 +16,10 @@ namespace LMS.GUIForms
         {
             InitializeComponent();
         }
+
+        private void textBox3isbn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

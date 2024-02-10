@@ -21,5 +21,10 @@ namespace Final
         {
             Application.Exit();
         }
+
+        private void LibraryInterface_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

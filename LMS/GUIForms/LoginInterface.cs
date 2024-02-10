@@ -40,5 +40,10 @@ namespace LMS.GUIForms
             new SignUp().Show();
             this.Hide();
         }
+
+        private void LoginInterface_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

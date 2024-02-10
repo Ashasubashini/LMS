@@ -61,18 +61,20 @@
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(1, 1);
+            panel1.Location = new Point(2, 2);
+            panel1.Margin = new Padding(6);
             panel1.Name = "panel1";
-            panel1.Size = new Size(292, 451);
+            panel1.Size = new Size(620, 925);
             panel1.TabIndex = 0;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(87, 261);
+            label4.Location = new Point(185, 535);
+            label4.Margin = new Padding(6, 0, 6, 0);
             label4.Name = "label4";
-            label4.Size = new Size(63, 25);
+            label4.Size = new Size(121, 48);
             label4.TabIndex = 3;
             label4.Text = "label4";
             // 
@@ -80,9 +82,10 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(87, 224);
+            label3.Location = new Point(185, 459);
+            label3.Margin = new Padding(6, 0, 6, 0);
             label3.Name = "label3";
-            label3.Size = new Size(63, 25);
+            label3.Size = new Size(121, 48);
             label3.TabIndex = 2;
             label3.Text = "label3";
             label3.Click += label3_Click;
@@ -91,18 +94,20 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(73, 158);
+            label1.Location = new Point(155, 324);
+            label1.Margin = new Padding(6, 0, 6, 0);
             label1.Name = "label1";
-            label1.Size = new Size(147, 23);
+            label1.Size = new Size(290, 46);
             label1.TabIndex = 1;
             label1.Text = "WELCOME USER!";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(62, 22);
+            pictureBox1.Location = new Point(132, 45);
+            pictureBox1.Margin = new Padding(6);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(158, 133);
+            pictureBox1.Size = new Size(336, 273);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -111,9 +116,10 @@
             // 
             pictureBox2.BackColor = Color.Lavender;
             pictureBox2.Image = LMS.Properties.Resources.open_book1;
-            pictureBox2.Location = new Point(0, 1);
+            pictureBox2.Location = new Point(0, 2);
+            pictureBox2.Margin = new Padding(6);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(164, 113);
+            pictureBox2.Size = new Size(348, 232);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -122,9 +128,10 @@
             // 
             button1.BackColor = Color.SteelBlue;
             button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(0, 110);
+            button1.Location = new Point(0, 226);
+            button1.Margin = new Padding(6);
             button1.Name = "button1";
-            button1.Size = new Size(164, 39);
+            button1.Size = new Size(348, 80);
             button1.TabIndex = 2;
             button1.Text = "Borrow book";
             button1.UseVisualStyleBackColor = false;
@@ -134,9 +141,10 @@
             panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(button1);
             panel2.Controls.Add(pictureBox2);
-            panel2.Location = new Point(582, 82);
+            panel2.Location = new Point(1237, 168);
+            panel2.Margin = new Padding(6);
             panel2.Name = "panel2";
-            panel2.Size = new Size(164, 148);
+            panel2.Size = new Size(348, 303);
             panel2.TabIndex = 3;
             // 
             // panel3
@@ -144,18 +152,20 @@
             panel3.BackColor = Color.Transparent;
             panel3.Controls.Add(button2);
             panel3.Controls.Add(pictureBox3);
-            panel3.Location = new Point(345, 83);
+            panel3.Location = new Point(733, 170);
+            panel3.Margin = new Padding(6);
             panel3.Name = "panel3";
-            panel3.Size = new Size(167, 147);
+            panel3.Size = new Size(355, 301);
             panel3.TabIndex = 4;
             // 
             // button2
             // 
             button2.BackColor = Color.SteelBlue;
             button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(0, 109);
+            button2.Location = new Point(0, 223);
+            button2.Margin = new Padding(6);
             button2.Name = "button2";
-            button2.Size = new Size(167, 41);
+            button2.Size = new Size(355, 84);
             button2.TabIndex = 1;
             button2.Text = "Search book";
             button2.UseVisualStyleBackColor = false;
@@ -164,9 +174,10 @@
             // 
             pictureBox3.BackColor = Color.Lavender;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(3, 0);
+            pictureBox3.Location = new Point(6, 0);
+            pictureBox3.Margin = new Padding(6);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(164, 112);
+            pictureBox3.Size = new Size(348, 230);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
@@ -176,58 +187,65 @@
             panel4.BackColor = Color.Transparent;
             panel4.Controls.Add(button3);
             panel4.Controls.Add(pictureBox4);
-            panel4.Location = new Point(479, 262);
+            panel4.Location = new Point(1018, 537);
+            panel4.Margin = new Padding(6);
             panel4.Name = "panel4";
-            panel4.Size = new Size(164, 148);
+            panel4.Size = new Size(348, 303);
             panel4.TabIndex = 5;
             // 
             // button3
             // 
             button3.BackColor = Color.SteelBlue;
             button3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(0, 111);
+            button3.Location = new Point(0, 228);
+            button3.Margin = new Padding(6);
             button3.Name = "button3";
-            button3.Size = new Size(164, 37);
+            button3.Size = new Size(348, 76);
             button3.TabIndex = 1;
             button3.Text = "Return book";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // pictureBox4
             // 
             pictureBox4.BackColor = Color.Lavender;
             pictureBox4.Image = LMS.Properties.Resources.books_stack_from_top_view1;
-            pictureBox4.Location = new Point(3, 0);
+            pictureBox4.Location = new Point(6, 0);
+            pictureBox4.Margin = new Padding(6);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(164, 111);
+            pictureBox4.Size = new Size(348, 228);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 0;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(761, 5);
+            label2.Location = new Point(1617, 10);
+            label2.Margin = new Padding(6, 0, 6, 0);
             label2.Name = "label2";
-            label2.Size = new Size(29, 31);
+            label2.Size = new Size(57, 62);
             label2.TabIndex = 6;
             label2.Text = "X";
             label2.Click += label2_Click;
             // 
             // memberinterface
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
             BackgroundImage = LMS.Properties.Resources._38828;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1700, 922);
             Controls.Add(label2);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(6);
             Name = "memberinterface";
             Text = "memberinterface";
             panel1.ResumeLayout(false);

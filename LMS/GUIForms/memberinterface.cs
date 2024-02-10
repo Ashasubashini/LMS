@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LMS.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,8 +17,8 @@ namespace Final
         public memberinterface(Member user)
         {
             InitializeComponent();
-            label3.Text = user.username;
-            label4.Text = user.email;
+            //label3.Text = user.username;
+            //label4.Text = user.email;
 
         }
 
@@ -29,6 +30,16 @@ namespace Final
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }
