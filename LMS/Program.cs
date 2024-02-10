@@ -23,8 +23,9 @@ namespace LMS
             //var client = new MongoClient().GetDatabase("LMSdb");
             //client.GetCollection<Librarian>("Librariandb").InsertOne(librarian);
 
-            //Console.WriteLine("kef");
-            //Console.ReadLine();
+           
+
+           
         }
     }
 }

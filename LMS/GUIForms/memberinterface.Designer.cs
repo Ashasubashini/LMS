@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(memberinterface));
             panel1 = new Panel();
-            label4 = new Label();
-            label3 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -44,6 +42,10 @@
             button3 = new Button();
             pictureBox4 = new PictureBox();
             label2 = new Label();
+            pictureBox5Logout = new PictureBox();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -52,11 +54,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5Logout).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(pictureBox5Logout);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label1);
@@ -65,26 +70,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(292, 451);
             panel1.TabIndex = 0;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(87, 261);
-            label4.Name = "label4";
-            label4.Size = new Size(63, 25);
-            label4.TabIndex = 3;
-            label4.Text = "label4";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(87, 224);
-            label3.Name = "label3";
-            label3.Size = new Size(63, 25);
-            label3.TabIndex = 2;
-            label3.Text = "label3";
             // 
             // label1
             // 
@@ -218,6 +203,46 @@
             label2.Text = "X";
             label2.Click += label2_Click;
             // 
+            // pictureBox5Logout
+            // 
+            pictureBox5Logout.Image = LMS.Properties.Resources.power_button;
+            pictureBox5Logout.Location = new Point(116, 374);
+            pictureBox5Logout.Name = "pictureBox5Logout";
+            pictureBox5Logout.Size = new Size(25, 35);
+            pictureBox5Logout.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5Logout.TabIndex = 4;
+            pictureBox5Logout.TabStop = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(99, 406);
+            label5.Name = "label5";
+            label5.Size = new Size(67, 23);
+            label5.TabIndex = 5;
+            label5.Text = "Logout";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(87, 261);
+            label4.Name = "label4";
+            label4.Size = new Size(63, 25);
+            label4.TabIndex = 3;
+            label4.Text = "label4";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(87, 224);
+            label3.Name = "label3";
+            label3.Size = new Size(63, 25);
+            label3.TabIndex = 2;
+            label3.Text = "label3";
+            // 
             // memberinterface
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -242,6 +267,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5Logout).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -261,7 +287,9 @@
         private Button button3;
         private PictureBox pictureBox4;
         private Label label2;
-        private Label label3;
+        private Label label5;
+        private PictureBox pictureBox5Logout;
         private Label label4;
+        private Label label3;
     }
 }

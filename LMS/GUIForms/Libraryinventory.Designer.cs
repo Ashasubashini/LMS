@@ -34,15 +34,16 @@
             column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            button1remove = new Button();
-            textBox1title = new TextBox();
-            textBox2Author = new TextBox();
-            textBox3isbn = new TextBox();
             label4title = new Label();
+            textBox3isbn = new TextBox();
+            textBox2Author = new TextBox();
+            textBox1title = new TextBox();
+            button1remove = new Button();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            button1back = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -108,45 +109,36 @@
             panel1.Size = new Size(331, 501);
             panel1.TabIndex = 2;
             // 
-            // pictureBox1
+            // label4title
             // 
-            pictureBox1.Image = Properties.Resources.study;
-            pictureBox1.Location = new Point(90, 32);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 111);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            label4title.AutoSize = true;
+            label4title.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4title.Location = new Point(32, 216);
+            label4title.Name = "label4title";
+            label4title.Size = new Size(50, 25);
+            label4title.TabIndex = 8;
+            label4title.Text = "Title";
             // 
-            // label1
+            // textBox3isbn
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(61, 212);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 25);
-            label1.TabIndex = 1;
+            textBox3isbn.Location = new Point(111, 322);
+            textBox3isbn.Name = "textBox3isbn";
+            textBox3isbn.Size = new Size(190, 27);
+            textBox3isbn.TabIndex = 7;
             // 
-            // label2
+            // textBox2Author
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(33, 268);
-            label2.Name = "label2";
-            label2.Size = new Size(72, 25);
-            label2.TabIndex = 2;
-            label2.Text = "Author";
-            label2.Click += label2_Click;
+            textBox2Author.Location = new Point(111, 268);
+            textBox2Author.Name = "textBox2Author";
+            textBox2Author.Size = new Size(190, 27);
+            textBox2Author.TabIndex = 6;
             // 
-            // label3
+            // textBox1title
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(33, 322);
-            label3.Name = "label3";
-            label3.Size = new Size(54, 25);
-            label3.TabIndex = 3;
-            label3.Text = "ISBN";
+            textBox1title.Location = new Point(111, 218);
+            textBox1title.Name = "textBox1title";
+            textBox1title.Size = new Size(190, 27);
+            textBox1title.TabIndex = 5;
             // 
             // button1remove
             // 
@@ -160,36 +152,57 @@
             button1remove.Text = "Remove";
             button1remove.UseVisualStyleBackColor = false;
             // 
-            // textBox1title
+            // label3
             // 
-            textBox1title.Location = new Point(111, 218);
-            textBox1title.Name = "textBox1title";
-            textBox1title.Size = new Size(190, 27);
-            textBox1title.TabIndex = 5;
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(33, 322);
+            label3.Name = "label3";
+            label3.Size = new Size(54, 25);
+            label3.TabIndex = 3;
+            label3.Text = "ISBN";
             // 
-            // textBox2Author
+            // label2
             // 
-            textBox2Author.Location = new Point(111, 268);
-            textBox2Author.Name = "textBox2Author";
-            textBox2Author.Size = new Size(190, 27);
-            textBox2Author.TabIndex = 6;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(33, 268);
+            label2.Name = "label2";
+            label2.Size = new Size(72, 25);
+            label2.TabIndex = 2;
+            label2.Text = "Author";
+            label2.Click += label2_Click;
             // 
-            // textBox3isbn
+            // label1
             // 
-            textBox3isbn.Location = new Point(111, 322);
-            textBox3isbn.Name = "textBox3isbn";
-            textBox3isbn.Size = new Size(190, 27);
-            textBox3isbn.TabIndex = 7;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(61, 212);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 25);
+            label1.TabIndex = 1;
             // 
-            // label4title
+            // pictureBox1
             // 
-            label4title.AutoSize = true;
-            label4title.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4title.Location = new Point(32, 216);
-            label4title.Name = "label4title";
-            label4title.Size = new Size(50, 25);
-            label4title.TabIndex = 8;
-            label4title.Text = "Title";
+            pictureBox1.Image = Properties.Resources.study;
+            pictureBox1.Location = new Point(90, 32);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(125, 111);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // button1back
+            // 
+            button1back.BackColor = SystemColors.ActiveCaptionText;
+            button1back.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1back.ForeColor = SystemColors.Control;
+            button1back.Location = new Point(833, 446);
+            button1back.Name = "button1back";
+            button1back.Size = new Size(94, 34);
+            button1back.TabIndex = 3;
+            button1back.Text = "Back";
+            button1back.UseVisualStyleBackColor = false;
             // 
             // Libraryinventory
             // 
@@ -197,6 +210,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources._388371;
             ClientSize = new Size(939, 501);
+            Controls.Add(button1back);
             Controls.Add(panel1);
             Controls.Add(dataGridView1);
             Controls.Add(label1close);
@@ -228,5 +242,6 @@
         private Label label2;
         private Label label1;
         private Label label4title;
+        private Button button1back;
     }
 }

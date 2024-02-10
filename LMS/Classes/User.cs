@@ -10,10 +10,9 @@ namespace Final
         public string email;
         public string password;
 
-        public User(string username, string userId, string email, string password)
+        public User(string username, string userId,  string password)
         {
             this.username = username;
-            this.email = email;
             this.userId = userId;
             this.password = password;
         }
@@ -28,12 +27,6 @@ namespace Final
         {
             get { return userId; }
             set { userId = value; }
-        }
-
-        public string Email
-        {
-            get { return email; }
-            set { email = value; }
         }
 
         public string Password

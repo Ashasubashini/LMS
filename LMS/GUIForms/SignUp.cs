@@ -18,12 +18,12 @@ namespace Final
 
         private void button1signup_Click(object sender, EventArgs e)
         {
-            User u = new User("asha", "DS213", "fdf@ew", "rewr23");
+            User u = new User("asha", "DS213", "rewr23");
             List<User> users = u.Register();
             string message = "Users:\n";
             foreach (var user in users)
             {
-                message += $"Username: {user.username}, Email: {user.email}, Password: {user.password}\n";
+                message += $"Username: {user.username}, Password: {user.password}\n";
             }
             MessageBox.Show(message);
         }

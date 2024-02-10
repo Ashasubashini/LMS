@@ -37,6 +37,7 @@
             textBox2 = new TextBox();
             textBox3isbn = new TextBox();
             button1return = new Button();
+            button1back = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -124,12 +125,25 @@
             button1return.UseVisualStyleBackColor = false;
             button1return.Click += button1return_Click;
             // 
+            // button1back
+            // 
+            button1back.BackColor = SystemColors.ActiveCaptionText;
+            button1back.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1back.ForeColor = SystemColors.Control;
+            button1back.Location = new Point(362, 468);
+            button1back.Name = "button1back";
+            button1back.Size = new Size(94, 33);
+            button1back.TabIndex = 9;
+            button1back.Text = "Back";
+            button1back.UseVisualStyleBackColor = false;
+            // 
             // Returnbook
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SteelBlue;
             ClientSize = new Size(462, 513);
+            Controls.Add(button1back);
             Controls.Add(button1return);
             Controls.Add(textBox3isbn);
             Controls.Add(textBox2);
@@ -158,5 +172,6 @@
         private TextBox textBox2;
         private TextBox textBox3isbn;
         private Button button1return;
+        private Button button1back;
     }
 }

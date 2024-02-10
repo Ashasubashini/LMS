@@ -36,12 +36,13 @@
             textBox3isbn = new TextBox();
             button1addbook = new Button();
             Availability = new DataGridView();
-            panel1 = new Panel();
-            pictureBox1 = new PictureBox();
             Title = new DataGridViewTextBoxColumn();
             Author = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewTextBoxColumn();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             label1Close = new Label();
+            button1back = new Button();
             ((System.ComponentModel.ISupportInitialize)Availability).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -123,6 +124,27 @@
             Availability.Size = new Size(558, 121);
             Availability.TabIndex = 8;
             // 
+            // Title
+            // 
+            Title.HeaderText = "Titel";
+            Title.MinimumWidth = 6;
+            Title.Name = "Title";
+            Title.Width = 175;
+            // 
+            // Author
+            // 
+            Author.HeaderText = "Author";
+            Author.MinimumWidth = 6;
+            Author.Name = "Author";
+            Author.Width = 175;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "ISBN";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.Width = 175;
+            // 
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
@@ -149,36 +171,28 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // Title
-            // 
-            Title.HeaderText = "Titel";
-            Title.MinimumWidth = 6;
-            Title.Name = "Title";
-            Title.Width = 175;
-            // 
-            // Author
-            // 
-            Author.HeaderText = "Author";
-            Author.MinimumWidth = 6;
-            Author.Name = "Author";
-            Author.Width = 175;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "ISBN";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 175;
-            // 
             // label1Close
             // 
             label1Close.AutoSize = true;
+            label1Close.BackColor = Color.Transparent;
             label1Close.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1Close.Location = new Point(924, 9);
             label1Close.Name = "label1Close";
             label1Close.Size = new Size(35, 38);
             label1Close.TabIndex = 10;
             label1Close.Text = "X";
+            // 
+            // button1back
+            // 
+            button1back.BackColor = SystemColors.ActiveCaptionText;
+            button1back.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1back.ForeColor = SystemColors.Control;
+            button1back.Location = new Point(878, 417);
+            button1back.Name = "button1back";
+            button1back.Size = new Size(94, 29);
+            button1back.TabIndex = 11;
+            button1back.Text = "Back";
+            button1back.UseVisualStyleBackColor = false;
             // 
             // Addbook
             // 
@@ -187,6 +201,7 @@
             BackColor = Color.Lavender;
             BackgroundImage = LMS.Properties.Resources._388371;
             ClientSize = new Size(971, 450);
+            Controls.Add(button1back);
             Controls.Add(label1Close);
             Controls.Add(panel1);
             Controls.Add(Availability);
@@ -217,5 +232,6 @@
         private DataGridViewTextBoxColumn Author;
         private DataGridViewTextBoxColumn Column1;
         private Label label1Close;
+        private Button button1back;
     }
 }

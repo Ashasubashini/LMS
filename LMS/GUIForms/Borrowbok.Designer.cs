@@ -34,6 +34,7 @@
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
+            button1back = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -79,12 +80,25 @@
             Column3.Name = "Column3";
             Column3.Width = 250;
             // 
+            // button1back
+            // 
+            button1back.BackColor = SystemColors.ActiveCaptionText;
+            button1back.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1back.ForeColor = SystemColors.Control;
+            button1back.Location = new Point(703, 456);
+            button1back.Name = "button1back";
+            button1back.Size = new Size(94, 41);
+            button1back.TabIndex = 2;
+            button1back.Text = "Back";
+            button1back.UseVisualStyleBackColor = false;
+            // 
             // Borrowbok
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(809, 509);
+            Controls.Add(button1back);
             Controls.Add(dataGridView1);
             Controls.Add(label1close);
             FormBorderStyle = FormBorderStyle.None;
@@ -103,5 +117,6 @@
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
+        private Button button1back;
     }
 }

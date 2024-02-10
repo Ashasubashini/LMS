@@ -39,6 +39,7 @@
             textBox3isbn = new TextBox();
             textBox4availability = new TextBox();
             button1issuebook = new Button();
+            button1back = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -142,12 +143,25 @@
             button1issuebook.Text = "Issue Book";
             button1issuebook.UseVisualStyleBackColor = false;
             // 
+            // button1back
+            // 
+            button1back.BackColor = SystemColors.ActiveCaptionText;
+            button1back.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1back.ForeColor = SystemColors.Control;
+            button1back.Location = new Point(353, 493);
+            button1back.Name = "button1back";
+            button1back.Size = new Size(94, 35);
+            button1back.TabIndex = 11;
+            button1back.Text = "Back";
+            button1back.UseVisualStyleBackColor = false;
+            // 
             // Issuedbook
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SteelBlue;
             ClientSize = new Size(459, 540);
+            Controls.Add(button1back);
             Controls.Add(button1issuebook);
             Controls.Add(textBox4availability);
             Controls.Add(textBox3isbn);
@@ -180,5 +194,6 @@
         private TextBox textBox3isbn;
         private TextBox textBox4availability;
         private Button button1issuebook;
+        private Button button1back;
     }
 }

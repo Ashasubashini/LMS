@@ -31,8 +31,6 @@
             pictureBox1 = new PictureBox();
             button1signup = new Button();
             label1 = new Label();
-            label2 = new Label();
-            textBox1email = new TextBox();
             textBox2username = new TextBox();
             label3close = new Label();
             label4 = new Label();
@@ -40,8 +38,6 @@
             textBox3password = new TextBox();
             textBox4conpassword = new TextBox();
             checkBox1showpwd = new CheckBox();
-            label3 = new Label();
-            textBox1contactnumber = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -61,7 +57,7 @@
             button1signup.BackColor = SystemColors.ActiveCaptionText;
             button1signup.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1signup.ForeColor = SystemColors.Control;
-            button1signup.Location = new Point(151, 474);
+            button1signup.Location = new Point(151, 415);
             button1signup.Name = "button1signup";
             button1signup.Size = new Size(125, 42);
             button1signup.TabIndex = 1;
@@ -78,23 +74,6 @@
             label1.Size = new Size(105, 25);
             label1.TabIndex = 2;
             label1.Text = "User Name";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(22, 245);
-            label2.Name = "label2";
-            label2.Size = new Size(58, 25);
-            label2.TabIndex = 3;
-            label2.Text = "Email";
-            // 
-            // textBox1email
-            // 
-            textBox1email.Location = new Point(191, 245);
-            textBox1email.Name = "textBox1email";
-            textBox1email.Size = new Size(209, 27);
-            textBox1email.TabIndex = 4;
             // 
             // textBox2username
             // 
@@ -118,7 +97,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(22, 341);
+            label4.Location = new Point(22, 249);
             label4.Name = "label4";
             label4.Size = new Size(92, 25);
             label4.TabIndex = 7;
@@ -128,7 +107,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(22, 386);
+            label5.Location = new Point(22, 288);
             label5.Name = "label5";
             label5.Size = new Size(163, 25);
             label5.TabIndex = 8;
@@ -136,7 +115,7 @@
             // 
             // textBox3password
             // 
-            textBox3password.Location = new Point(191, 342);
+            textBox3password.Location = new Point(191, 249);
             textBox3password.Name = "textBox3password";
             textBox3password.PasswordChar = '*';
             textBox3password.Size = new Size(209, 27);
@@ -144,7 +123,7 @@
             // 
             // textBox4conpassword
             // 
-            textBox4conpassword.Location = new Point(191, 387);
+            textBox4conpassword.Location = new Point(191, 304);
             textBox4conpassword.Name = "textBox4conpassword";
             textBox4conpassword.PasswordChar = '*';
             textBox4conpassword.Size = new Size(209, 27);
@@ -154,38 +133,19 @@
             // 
             checkBox1showpwd.AutoSize = true;
             checkBox1showpwd.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBox1showpwd.Location = new Point(286, 420);
+            checkBox1showpwd.Location = new Point(286, 356);
             checkBox1showpwd.Name = "checkBox1showpwd";
             checkBox1showpwd.Size = new Size(140, 24);
             checkBox1showpwd.TabIndex = 12;
             checkBox1showpwd.Text = "Show password";
             checkBox1showpwd.UseVisualStyleBackColor = true;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(22, 293);
-            label3.Name = "label3";
-            label3.Size = new Size(152, 25);
-            label3.TabIndex = 13;
-            label3.Text = "Contact Number";
-            // 
-            // textBox1contactnumber
-            // 
-            textBox1contactnumber.Location = new Point(191, 291);
-            textBox1contactnumber.Name = "textBox1contactnumber";
-            textBox1contactnumber.Size = new Size(209, 27);
-            textBox1contactnumber.TabIndex = 14;
-            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SteelBlue;
-            ClientSize = new Size(438, 592);
-            Controls.Add(textBox1contactnumber);
-            Controls.Add(label3);
+            ClientSize = new Size(438, 528);
             Controls.Add(checkBox1showpwd);
             Controls.Add(textBox4conpassword);
             Controls.Add(textBox3password);
@@ -193,8 +153,6 @@
             Controls.Add(label4);
             Controls.Add(label3close);
             Controls.Add(textBox2username);
-            Controls.Add(textBox1email);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1signup);
             Controls.Add(pictureBox1);
@@ -211,8 +169,6 @@
         private PictureBox pictureBox1;
         private Button button1signup;
         private Label label1;
-        private Label label2;
-        private TextBox textBox1email;
         private TextBox textBox2username;
         private Label label3close;
         private Label label4;
@@ -220,7 +176,5 @@
         private TextBox textBox3password;
         private TextBox textBox4conpassword;
         private CheckBox checkBox1showpwd;
-        private Label label3;
-        private TextBox textBox1contactnumber;
     }
 }

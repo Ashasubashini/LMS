@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LibraryInterface));
             panel1 = new Panel();
-            label4 = new Label();
-            label3 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             label2 = new Label();
@@ -56,6 +54,8 @@
             button7transaction = new Button();
             pictureBox8 = new PictureBox();
             panel8 = new Panel();
+            label5 = new Label();
+            pictureBox9Logout = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -72,39 +72,20 @@
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9Logout).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
+            panel1.Controls.Add(pictureBox9Logout);
+            panel1.Controls.Add(label5);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(2, 1);
             panel1.Name = "panel1";
             panel1.Size = new Size(267, 451);
             panel1.TabIndex = 0;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(70, 274);
-            label4.Name = "label4";
-            label4.Size = new Size(63, 25);
-            label4.TabIndex = 3;
-            label4.Text = "label4";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(70, 223);
-            label3.Name = "label3";
-            label3.Size = new Size(63, 25);
-            label3.TabIndex = 2;
-            label3.Text = "label3";
             // 
             // label1
             // 
@@ -366,6 +347,26 @@
             panel8.Size = new Size(155, 159);
             panel8.TabIndex = 10;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(86, 423);
+            label5.Name = "label5";
+            label5.Size = new Size(67, 23);
+            label5.TabIndex = 4;
+            label5.Text = "Logout";
+            // 
+            // pictureBox9Logout
+            // 
+            pictureBox9Logout.Image = LMS.Properties.Resources.power_button1;
+            pictureBox9Logout.Location = new Point(101, 384);
+            pictureBox9Logout.Name = "pictureBox9Logout";
+            pictureBox9Logout.Size = new Size(32, 36);
+            pictureBox9Logout.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox9Logout.TabIndex = 5;
+            pictureBox9Logout.TabStop = false;
+            // 
             // LibraryInterface
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -402,6 +403,7 @@
             panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox9Logout).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -430,10 +432,10 @@
         private Button button4;
         private Button button5;
         private Button button6;
-        private Label label4;
-        private Label label3;
         private Button button7transaction;
         private PictureBox pictureBox8;
         private Panel panel8;
+        private PictureBox pictureBox9Logout;
+        private Label label5;
     }
 }

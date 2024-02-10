@@ -40,6 +40,7 @@
             label4 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
+            button1back = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -58,6 +59,7 @@
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
+            panel1.Controls.Add(button1back);
             panel1.Controls.Add(button1borrow);
             panel1.Controls.Add(textBox4availability);
             panel1.Controls.Add(label1);
@@ -165,6 +167,18 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // button1back
+            // 
+            button1back.BackColor = SystemColors.ActiveCaptionText;
+            button1back.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1back.ForeColor = SystemColors.Control;
+            button1back.Location = new Point(342, 458);
+            button1back.Name = "button1back";
+            button1back.Size = new Size(94, 39);
+            button1back.TabIndex = 11;
+            button1back.Text = "Back";
+            button1back.UseVisualStyleBackColor = false;
+            // 
             // searchbook
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -194,5 +208,6 @@
         private TextBox textBox2ISBN;
         private TextBox textBox1Title;
         private Button button1borrow;
+        private Button button1back;
     }
 }

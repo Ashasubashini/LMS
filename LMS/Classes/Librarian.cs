@@ -8,7 +8,7 @@ namespace Final
 {
     public class Librarian : User
     {
-        public Librarian(string userName, string userID, string Email, string Password) : base(userName, userID, Email, Password)
+        public Librarian(string userName, string userID, string Password) : base(userName, userID, Password)
         { }
     }
 }
