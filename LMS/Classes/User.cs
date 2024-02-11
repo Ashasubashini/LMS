@@ -2,10 +2,10 @@
 {
     public class User
     {
-        private string username;
-        private string userId;
-        private string email;
-        private string password;
+        public string username;
+        public string userId;
+        public string email;
+        public string password;
 
         public User(string username, string userId, string email, string password)
         {

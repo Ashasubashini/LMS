@@ -25,19 +25,19 @@ namespace LMS.GUIForms
 
         private void button1memberlogin_Click(object sender, EventArgs e)
         {
-            new memberLogin().Show();
+            new MemberLogin().Show();
             this.Hide();
         }
 
-        private void button2librarianlogin_Click(object sender, EventArgs e)
-        {
-            new LibrarianLogin().Show();
-            this.Hide();
-        }
+        //private void button2librarianlogin_Click(object sender, EventArgs e)
+        //{
+        //    new LibrarianLogin().Show();
+        //    this.Hide();
+        //}
 
         private void button3signup_Click(object sender, EventArgs e)
         {
-            new SignUp().Show();
+            new Signup().Show();
             this.Hide();
         }
     }

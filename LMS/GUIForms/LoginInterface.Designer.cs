@@ -62,7 +62,7 @@
             button2librarianlogin.TabIndex = 1;
             button2librarianlogin.Text = "Librarian login";
             button2librarianlogin.UseVisualStyleBackColor = false;
-            button2librarianlogin.Click += button2librarianlogin_Click;
+            //button2librarianlogin.Click += button2librarianlogin_Click;
             // 
             // button3signup
             // 
