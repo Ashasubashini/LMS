@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LMS.GUIForms
 {
-    public partial class Librarianinterface : Form
+    public partial class Librarianlogoin : Form
     {
-        public Librarianinterface()
+        public Librarianlogoin()
         {
             InitializeComponent();
         }

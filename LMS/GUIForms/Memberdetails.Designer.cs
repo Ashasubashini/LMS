@@ -30,17 +30,18 @@
         {
             label1close = new Label();
             dataGridView1 = new DataGridView();
-            pictureBox1 = new PictureBox();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
+            pictureBox1 = new PictureBox();
             panel1 = new Panel();
-            label1ID = new Label();
-            label2name = new Label();
-            textBox1ID = new TextBox();
-            textBox2Name = new TextBox();
             button1remove = new Button();
+            textBox2Name = new TextBox();
+            textBox1ID = new TextBox();
+            label2name = new Label();
+            label1ID = new Label();
+            button1back = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -56,6 +57,7 @@
             label1close.Size = new Size(29, 31);
             label1close.TabIndex = 0;
             label1close.Text = "X";
+            label1close.Click += label1close_Click;
             // 
             // dataGridView1
             // 
@@ -66,17 +68,6 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(771, 263);
             dataGridView1.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = Properties.Resources.group_chat1;
-            pictureBox1.Location = new Point(58, 11);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(158, 122);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
             // 
             // Column1
             // 
@@ -106,6 +97,17 @@
             Column4.Name = "Column4";
             Column4.Width = 180;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = Properties.Resources.group_chat1;
+            pictureBox1.Location = new Point(58, 11);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(158, 122);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
@@ -120,40 +122,6 @@
             panel1.Size = new Size(285, 497);
             panel1.TabIndex = 3;
             // 
-            // label1ID
-            // 
-            label1ID.AutoSize = true;
-            label1ID.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1ID.Location = new Point(3, 228);
-            label1ID.Name = "label1ID";
-            label1ID.Size = new Size(107, 25);
-            label1ID.TabIndex = 3;
-            label1ID.Text = "Member ID";
-            // 
-            // label2name
-            // 
-            label2name.AutoSize = true;
-            label2name.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2name.Location = new Point(3, 282);
-            label2name.Name = "label2name";
-            label2name.Size = new Size(62, 25);
-            label2name.TabIndex = 4;
-            label2name.Text = "Name";
-            // 
-            // textBox1ID
-            // 
-            textBox1ID.Location = new Point(125, 226);
-            textBox1ID.Name = "textBox1ID";
-            textBox1ID.Size = new Size(147, 27);
-            textBox1ID.TabIndex = 5;
-            // 
-            // textBox2Name
-            // 
-            textBox2Name.Location = new Point(125, 283);
-            textBox2Name.Name = "textBox2Name";
-            textBox2Name.Size = new Size(147, 27);
-            textBox2Name.TabIndex = 6;
-            // 
             // button1remove
             // 
             button1remove.BackColor = SystemColors.ActiveCaptionText;
@@ -166,6 +134,49 @@
             button1remove.Text = "Remove";
             button1remove.UseVisualStyleBackColor = false;
             // 
+            // textBox2Name
+            // 
+            textBox2Name.Location = new Point(125, 283);
+            textBox2Name.Name = "textBox2Name";
+            textBox2Name.Size = new Size(147, 27);
+            textBox2Name.TabIndex = 6;
+            // 
+            // textBox1ID
+            // 
+            textBox1ID.Location = new Point(125, 226);
+            textBox1ID.Name = "textBox1ID";
+            textBox1ID.Size = new Size(147, 27);
+            textBox1ID.TabIndex = 5;
+            // 
+            // label2name
+            // 
+            label2name.AutoSize = true;
+            label2name.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2name.Location = new Point(3, 282);
+            label2name.Name = "label2name";
+            label2name.Size = new Size(62, 25);
+            label2name.TabIndex = 4;
+            label2name.Text = "Name";
+            // 
+            // label1ID
+            // 
+            label1ID.AutoSize = true;
+            label1ID.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1ID.Location = new Point(3, 228);
+            label1ID.Name = "label1ID";
+            label1ID.Size = new Size(107, 25);
+            label1ID.TabIndex = 3;
+            label1ID.Text = "Member ID";
+            // 
+            // button1back
+            // 
+            button1back.Location = new Point(976, 451);
+            button1back.Name = "button1back";
+            button1back.Size = new Size(94, 29);
+            button1back.TabIndex = 4;
+            button1back.Text = "Back";
+            button1back.UseVisualStyleBackColor = true;
+            // 
             // Memberdetails
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -173,6 +184,7 @@
             BackColor = SystemColors.ControlDark;
             BackgroundImage = Properties.Resources._388371;
             ClientSize = new Size(1073, 498);
+            Controls.Add(button1back);
             Controls.Add(panel1);
             Controls.Add(dataGridView1);
             Controls.Add(label1close);
@@ -202,5 +214,6 @@
         private Label label2name;
         private Label label1ID;
         private Button button1remove;
+        private Button button1back;
     }
 }

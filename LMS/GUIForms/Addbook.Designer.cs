@@ -1,4 +1,4 @@
-﻿namespace Final
+﻿namespace LMS.GUIForms
 {
     partial class Addbook
     {
@@ -28,194 +28,166 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label2author = new Label();
-            label3isbn = new Label();
-            label1title = new Label();
-            textBox1Title = new TextBox();
+            dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            panel1 = new Panel();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            textBox1title = new TextBox();
             textBox2author = new TextBox();
             textBox3isbn = new TextBox();
             button1addbook = new Button();
-            Availability = new DataGridView();
-            panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            Title = new DataGridViewTextBoxColumn();
-            Author = new DataGridViewTextBoxColumn();
-            Column1 = new DataGridViewTextBoxColumn();
-            label1Close = new Label();
-            ((System.ComponentModel.ISupportInitialize)Availability).BeginInit();
+            button1back = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // label2author
+            // dataGridView1
             // 
-            label2author.AutoSize = true;
-            label2author.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2author.Location = new Point(12, 258);
-            label2author.Name = "label2author";
-            label2author.Size = new Size(72, 25);
-            label2author.TabIndex = 1;
-            label2author.Text = "Author";
-            // 
-            // label3isbn
-            // 
-            label3isbn.AutoSize = true;
-            label3isbn.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3isbn.Location = new Point(12, 318);
-            label3isbn.Name = "label3isbn";
-            label3isbn.Size = new Size(54, 25);
-            label3isbn.TabIndex = 2;
-            label3isbn.Text = "ISBN";
-            label3isbn.Click += label3isbn_Click;
-            // 
-            // label1title
-            // 
-            label1title.AutoSize = true;
-            label1title.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1title.Location = new Point(12, 199);
-            label1title.Name = "label1title";
-            label1title.Size = new Size(50, 25);
-            label1title.TabIndex = 3;
-            label1title.Text = "Title";
-            // 
-            // textBox1Title
-            // 
-            textBox1Title.Location = new Point(107, 197);
-            textBox1Title.Name = "textBox1Title";
-            textBox1Title.Size = new Size(198, 27);
-            textBox1Title.TabIndex = 4;
-            textBox1Title.TextChanged += textBox1Title_TextChanged;
-            // 
-            // textBox2author
-            // 
-            textBox2author.Location = new Point(108, 256);
-            textBox2author.Name = "textBox2author";
-            textBox2author.Size = new Size(197, 27);
-            textBox2author.TabIndex = 5;
-            // 
-            // textBox3isbn
-            // 
-            textBox3isbn.Location = new Point(108, 316);
-            textBox3isbn.Name = "textBox3isbn";
-            textBox3isbn.Size = new Size(197, 27);
-            textBox3isbn.TabIndex = 6;
-            // 
-            // button1addbook
-            // 
-            button1addbook.BackColor = SystemColors.ActiveCaptionText;
-            button1addbook.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1addbook.ForeColor = SystemColors.Control;
-            button1addbook.Location = new Point(95, 370);
-            button1addbook.Name = "button1addbook";
-            button1addbook.Size = new Size(136, 44);
-            button1addbook.TabIndex = 7;
-            button1addbook.Text = "Add Book";
-            button1addbook.UseVisualStyleBackColor = false;
-            button1addbook.Click += button1addbook_Click;
-            // 
-            // Availability
-            // 
-            Availability.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Availability.Columns.AddRange(new DataGridViewColumn[] { Title, Author, Column1 });
-            Availability.Location = new Point(374, 71);
-            Availability.Name = "Availability";
-            Availability.RowHeadersWidth = 51;
-            Availability.Size = new Size(558, 121);
-            Availability.TabIndex = 8;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.SteelBlue;
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(label2author);
-            panel1.Controls.Add(button1addbook);
-            panel1.Controls.Add(textBox2author);
-            panel1.Controls.Add(textBox3isbn);
-            panel1.Controls.Add(label1title);
-            panel1.Controls.Add(label3isbn);
-            panel1.Controls.Add(textBox1Title);
-            panel1.Location = new Point(0, -1);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(355, 454);
-            panel1.TabIndex = 9;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = LMS.Properties.Resources.add__1_;
-            pictureBox1.Location = new Point(85, 26);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(167, 134);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
-            // Title
-            // 
-            Title.HeaderText = "Titel";
-            Title.MinimumWidth = 6;
-            Title.Name = "Title";
-            Title.Width = 175;
-            // 
-            // Author
-            // 
-            Author.HeaderText = "Author";
-            Author.MinimumWidth = 6;
-            Author.Name = "Author";
-            Author.Width = 175;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
+            dataGridView1.Location = new Point(341, 98);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(541, 188);
+            dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Column1
             // 
-            Column1.HeaderText = "ISBN";
+            Column1.HeaderText = "Title";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
-            Column1.Width = 175;
+            Column1.Width = 180;
             // 
-            // label1Close
+            // Column2
             // 
-            label1Close.AutoSize = true;
-            label1Close.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1Close.Location = new Point(924, 9);
-            label1Close.Name = "label1Close";
-            label1Close.Size = new Size(35, 38);
-            label1Close.TabIndex = 10;
-            label1Close.Text = "X";
+            Column2.HeaderText = "Author";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.Width = 180;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "ISBN";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.Width = 180;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(button1addbook);
+            panel1.Controls.Add(textBox3isbn);
+            panel1.Controls.Add(textBox2author);
+            panel1.Controls.Add(textBox1title);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(4, -1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(254, 454);
+            panel1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(18, 200);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Title";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(31, 245);
+            label2.Name = "label2";
+            label2.Size = new Size(54, 20);
+            label2.TabIndex = 1;
+            label2.Text = "Author";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(16, 290);
+            label3.Name = "label3";
+            label3.Size = new Size(41, 20);
+            label3.TabIndex = 2;
+            label3.Text = "ISBN";
+            // 
+            // textBox1title
+            // 
+            textBox1title.Location = new Point(81, 197);
+            textBox1title.Name = "textBox1title";
+            textBox1title.Size = new Size(173, 27);
+            textBox1title.TabIndex = 3;
+            // 
+            // textBox2author
+            // 
+            textBox2author.Location = new Point(81, 238);
+            textBox2author.Name = "textBox2author";
+            textBox2author.Size = new Size(173, 27);
+            textBox2author.TabIndex = 4;
+            // 
+            // textBox3isbn
+            // 
+            textBox3isbn.Location = new Point(81, 287);
+            textBox3isbn.Name = "textBox3isbn";
+            textBox3isbn.Size = new Size(170, 27);
+            textBox3isbn.TabIndex = 5;
+            // 
+            // button1addbook
+            // 
+            button1addbook.Location = new Point(112, 384);
+            button1addbook.Name = "button1addbook";
+            button1addbook.Size = new Size(94, 29);
+            button1addbook.TabIndex = 6;
+            button1addbook.Text = "Add book";
+            button1addbook.UseVisualStyleBackColor = true;
+            // 
+            // button1back
+            // 
+            button1back.Location = new Point(889, 409);
+            button1back.Name = "button1back";
+            button1back.Size = new Size(94, 29);
+            button1back.TabIndex = 2;
+            button1back.Text = "back";
+            button1back.UseVisualStyleBackColor = true;
             // 
             // Addbook
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Lavender;
-            BackgroundImage = LMS.Properties.Resources._388371;
-            ClientSize = new Size(971, 450);
-            Controls.Add(label1Close);
+            ClientSize = new Size(1016, 450);
+            Controls.Add(button1back);
             Controls.Add(panel1);
-            Controls.Add(Availability);
+            Controls.Add(dataGridView1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Addbook";
             Text = "Addbook";
-            ((System.ComponentModel.ISupportInitialize)Availability).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label2author;
-        private Label label3isbn;
-        private Label label1title;
-        private TextBox textBox1Title;
-        private TextBox textBox2author;
-        private TextBox textBox3isbn;
-        private Button button1addbook;
-        private DataGridView Availability;
-        private Panel panel1;
-        private PictureBox pictureBox1;
-        private DataGridViewTextBoxColumn Title;
-        private DataGridViewTextBoxColumn Author;
+        private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn Column1;
-        private Label label1Close;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private Panel panel1;
+        private Button button1addbook;
+        private TextBox textBox3isbn;
+        private TextBox textBox2author;
+        private TextBox textBox1title;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private Button button1back;
     }
 }

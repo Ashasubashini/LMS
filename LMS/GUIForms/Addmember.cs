@@ -16,5 +16,10 @@ namespace LMS.GUIForms
         {
             InitializeComponent();
         }
+
+        private void label1close_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

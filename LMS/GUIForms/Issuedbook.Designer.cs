@@ -39,6 +39,7 @@
             textBox3isbn = new TextBox();
             textBox4availability = new TextBox();
             button1issuebook = new Button();
+            button1back = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -142,12 +143,22 @@
             button1issuebook.Text = "Issue Book";
             button1issuebook.UseVisualStyleBackColor = false;
             // 
+            // button1back
+            // 
+            button1back.Location = new Point(362, 491);
+            button1back.Name = "button1back";
+            button1back.Size = new Size(94, 29);
+            button1back.TabIndex = 11;
+            button1back.Text = "back";
+            button1back.UseVisualStyleBackColor = true;
+            // 
             // Issuedbook
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SteelBlue;
             ClientSize = new Size(459, 540);
+            Controls.Add(button1back);
             Controls.Add(button1issuebook);
             Controls.Add(textBox4availability);
             Controls.Add(textBox3isbn);
@@ -180,5 +191,6 @@
         private TextBox textBox3isbn;
         private TextBox textBox4availability;
         private Button button1issuebook;
+        private Button button1back;
     }
 }

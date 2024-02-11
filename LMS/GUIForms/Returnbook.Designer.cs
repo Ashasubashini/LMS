@@ -49,6 +49,7 @@
             label1close.Size = new Size(29, 31);
             label1close.TabIndex = 0;
             label1close.Text = "X";
+            label1close.Click += label1close_Click;
             // 
             // pictureBox1
             // 

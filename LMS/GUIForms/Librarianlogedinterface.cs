@@ -8,18 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Final
+namespace LMS.GUIForms
 {
-    public partial class LibraryInterface : Form
+    public partial class Librarianlogedinterface : Form
     {
-        public LibraryInterface()
+        public Librarianlogedinterface()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
     }
 }

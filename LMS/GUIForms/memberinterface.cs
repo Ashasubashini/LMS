@@ -8,27 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Final
+namespace LMS.GUIForms
 {
-
-    public partial class memberinterface : Form
+    public partial class MemberInterface : Form
     {
-        public memberinterface(Member user)
+        public MemberInterface()
         {
             InitializeComponent();
-            label3.Text = user.username;
-            label4.Text = user.email;
-
         }
 
-
-
-        private void label2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }

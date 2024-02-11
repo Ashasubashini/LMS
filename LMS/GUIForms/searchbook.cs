@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Final
+namespace LMS.GUIForms
 {
-    public partial class searchbook : Form
+    public partial class Searchbook : Form
     {
-        public searchbook()
+        public Searchbook()
         {
             InitializeComponent();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void label1close_Click(object sender, EventArgs e)
         {
 
         }
